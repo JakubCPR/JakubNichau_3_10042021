@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="decouverte du restaurant a-la-francaise" />
         <title>a la francaise</title>
         <link rel="stylesheet" href="public/css/style.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -13,7 +14,11 @@
         <div id="container">
             <header>
                 <div id="logo_wrapper">
+                    <a href="index.html" class="arrow">
+                      <i class="fas fa-arrow-left"></i>
+                    </a>
                     <img src="./public/images/logo/ohmyfood.png" alt="ohmyfood logo">
+                    <span class="filler"></span>
                 </div>
                 <a  href="#" class="head_pic2">
                     <img src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="head_pic">
@@ -22,67 +27,112 @@
             </header>
             <div id="content">
                 <div id="fonctionnement">
-                    <h3>À la française <i class="far fa-heart"></i></h3>
-                    <span>ENTRées</span>
-                    <div class="element">
-                        Tartare de poulpe acidulé <br>
-                        Aux zests d'orange 25€
+                    <div class="title-restau">À la française <i class="far fa-heart"></i>
                     </div>
-                    <div class="element">
-                        Velouté de légumes d'antan <br>
-                        Carotte,panais, topinambour 35€
+                    <div class="menu-item">ENTRÉES
+                     <div id="small_underline"></div>
                     </div>
-                    <div class="element">
-                        Soupe à l'oignon <br>
-                        Revisitée                   20€
+                    <div class="dish-element">
+                        <div class="dish-name">Tartare de poulet acidulé</div>
+                        <div class="details-wrapper">
+                          <div class="dish-details">Aux zestes d'orange</div>
+                          <div class="dish-price">25€</div>
+                        </div>
+                      </div>
+                    <div class="dish-element">
+                        <div class="dish-name">Velouté de légumes d'antan</div> 
+                        <div class="details-wrapper">
+                         <div class="dish-details">Carotte,panais, topinambour</div> 
+                         <div class="dish-price">35€</div>
+                        </div>
+                      </div>
+                    
+                    <div class="dish-element">
+                        <div class="dish-name">Soupe à l'oignon</div>
+                        <div class="details-wrapper">
+                         <div class="dish-details">Revisitée</div>                   
+                         <div class="dish-price">20€</div>
+                       </div> 
+                     </div>
+                    <div class="menu-item">PLATS
+                      <div id="small_underline"></div>
                     </div>
-                    <span>PLATS</span>
-                    <div class="element">
-                        Coquilles Saint-Jacques <br>
-                        Accompagnées d'une purée de panais 40€
+                    <div class="dish-element">
+                        <div class="dish-name">Coquilles Saint-Jacques</div> 
+                        <div class="details-wrapper">
+                         <div class="dish-details">Accompagnées d'une purée de panais</div> 
+                         <div class="dish-price">40€</div>
+                      </div>
                     </div>
-                    <div class="element">
-                        Magret de canard <br>
-                        Et parmentier de pommes de terres 35€
+                    <div class="dish-element">
+                        <div class="dish-name">Magret de canard</div>
+                        <div class="details-wrapper">
+                         <div class="dish-details">Et parmentier de pommes de terres</div> 
+                         <div class="dish-price">35€</div>
+                       </div> 
                     </div>
-                    <div class="element">
-                        Pigeonneau d'ille-et-Vilaine <br>
-                        Sur son lit de gnocchis aux légumes 44€
+                    <div class="dish-element">
+                        <div class="dish-name">Pigeonneau d'ille-et-Vilaine</div>
+                        <div class="details-wrapper">
+                         <div class="dish-details">Sur son lit de gnocchis aux légumes</div> 
+                         <div class="dish-price">44€</div>
+                       </div>                       
                     </div>
-                    <span>Desserts</span>
-                    <div class="element">
-                        Pétales de violettes glacés <br>
-                        Et purée de noisettes 18€
+                    <div class="menu-item">DESSERTS
+                     <div id="small_underline"></div>
                     </div>
-                    <div class="element">
-                        Fondant au chocolat <br>
-                        Revisité 22€
+                    <div class="dish-element">
+                        <div class="dish-name">Pétales de violettes glacés</div>
+                        <div class="details-wrapper">
+                         <div class="dish-details">Et purée de noisettes</div> 
+                         <div class="dish-price">18€</div>
+                        </div>
                     </div>
-                    <div class="element">
-                        Millefeuille croustillant <br>
-                        Myrtilles et pate d'amande 23€
+                    <div class="dish-element">
+                        <div class="dish-name">Fondant au chocolat</div>
+                        <div class="details-wrapper">
+                         <div class="dish-details">Revisité</div> 
+                         <div class="dish-price">22€</div>
+                        </div>
+                    </div>
+                    <div class="dish-element">
+                        <div class="dish-name">Millefeuille croustillant</div>
+                        <div class="details-wrapper">
+                         <div class="dish-details">Myrtilles et pate d'amande</div> 
+                         <div class="dish-price">23€</div>
+                       </div> 
                     </div>
                     <div href="#" class="description_button">
                         Explorer nos restaurants
                     </div>
                 </div>
+                </div>
                 
-            </div>
+            
             <footer>
                 <div class="footer-elem">
-                    <img src="./public/images/logo/ohmyfood.png" alt="ohmyfood logo">
+                  <img src="./public/images/logo/ohmyfoodblanc.png" alt="ohmyfood logo" />
                 </div>
                 <div class="footer-elem">
+                  <div class="icon-wrapper">
                     <i class="fas fa-utensils"></i>
+                  </div>
+                  <span>
                     Proposer un restaurant
+                  </span>
                 </div>
                 <div class="footer-elem">
+                  <div class="icon-wrapper">
                     <i class="fas fa-handshake"></i>
+                  </div>
+                  <span>
                     Devenir partenaire
+                  </span>
                 </div>
                 <div class="footer-elem">Mentions légales</div>
                 <div class="footer-elem">Contact</div>
-            </footer>
+              </footer>
+            </div>
         </div>
     </body>
 </html>

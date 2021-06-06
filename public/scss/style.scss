@@ -11,14 +11,27 @@ h1,h2,h4,h5{
 #container{
 
     header{
+
         #logo_wrapper{
             background-color: white;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             padding:10px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            .arrow{
+            width: 15%;
+            color: #000000;
+            font-size: 1.3em;
+            margin-left: 15px;
+            }
             img{
                 width: 50%;
+            }
+            .filler{
+                width: 5%;
+                margin-right: 15px;
             }
         }
         .head_pic2{
@@ -111,6 +124,30 @@ h1,h2,h4,h5{
         }
     }
     #content{
+        .title-restau{
+            font-weight: 1200;
+            font-size: 1.5em;
+            text-decoration: none;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            .fa-heart{
+
+            }
+         }
+        .menu-item{
+            margin-left: 38px;
+            margin-bottom: 10px;
+            margin-top: 40px;
+        }
+        #small_underline {
+            border-bottom: 4px solid rgb(145, 245, 228);
+            width: 40px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
 
         #fonctionnement{ 
             h3{
@@ -118,6 +155,38 @@ h1,h2,h4,h5{
                font-size: 1.5em;
                text-decoration: none;
                padding: 20px;
+            }
+            .dish-element{
+                margin: 0 30px 10px 30px;
+                -webkit-box-shadow: 0px 5px 15px -5px #000000;
+                box-shadow: 0px 5px 15px -5px #000000;
+                border-radius: 20px;
+                padding: 10px 15px;
+                background-color: rgb(247, 247, 247);
+                &:active{
+                    background-color: #ebdafa;
+                    cursor: pointer;
+                }
+                &:hover{
+                    background-color: #ebdafa;
+                    cursor: pointer;
+                }
+                .dish-name{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+                .details-wrapper{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    .dish-details{
+                    font-size: 0.9rem;
+                    }
+                    .dish-price{
+                    font-weight: bold;
+                    }
+                }
             }
             .element{
                 font-weight: bold;
@@ -176,11 +245,25 @@ h1,h2,h4,h5{
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 20px;
+                position: relative;
                 img{
                     border-radius: 15px 15px 0 0;
                     object-fit: cover;
                     width: 100%;
                     height: 150px;
+                }
+                .new{
+                    background-color: #99e2d0;
+                    color: #008766;
+                    border-radius: 2px;
+                    padding: 5px;
+                    position:absolute;
+                    top: 10px;
+                    right: 10px;
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    width: 60px;
+                    text-align: center;
                 }
                 .image-description{
                     padding-left: 15px;
@@ -207,20 +290,23 @@ h1,h2,h4,h5{
         }
     }
     footer{
-        background-color: black;
+        background-color: #363636;
         padding-bottom: 25px;
         .footer-elem{
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            padding-left: 15px;
+            padding-left: 25px;
             color: white;
             margin-bottom: 7px;
-            .icon-wrappper{
-                margin-right: 10px;
-                width: 10%;
+            &:first-of-type{
+                margin-bottom: 25px;
+            }
+            .icon-wrapper{
+                //margin-right: 10px;
+                width: 30px;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
                 .fa-utensils .fa-handshake{
                     color: white;
@@ -230,7 +316,7 @@ h1,h2,h4,h5{
             img{
                 width: 30%;
                 margin-bottom: 5px;
-                margin-top: 15px;
+                margin-top: 25px;
             }
         }
     }
