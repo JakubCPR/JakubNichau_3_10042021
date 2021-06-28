@@ -109,13 +109,12 @@ h5 {
       border-radius: 50%;
       width: 120px;
       height: 120px;
-      animation-timing-function: ease-in-out;
       animation: spin 2s linear;
       margin-left: 110px;
       justify-content: center;
       align-items: center;
       display: flex;
-      z-index: 100;
+      animation: spin 3s ease-in-out 0.1s forwards;
 
     }
 
@@ -127,8 +126,32 @@ h5 {
       100% {
         transform: rotate(360deg);
         opacity: 0;
+        z-index: -1;
       }
     }
+    
+    .slide-in-top {
+        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+      .slide-in-top2 {
+        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
+      }
+      .slide-in-top3 {
+        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 200ms both;
+      }
+
+       @keyframes slide-in-top {
+       0% {
+         transform: translateY(-1000px);
+         opacity: 0;
+          }
+       100% {
+         transform: translateY(0);
+         opacity: 1;
+            }
+      }
+
+
 
     #menu {
       background-color: white;
@@ -186,11 +209,17 @@ h5 {
           align-items: center;
           justify-content: space-between;
           flex-direction: row;
+          flex-grow: 1;
           .dish-details {
             font-size: 0.9rem;
           }
           .dish-price {
             font-weight: bold;
+          }
+          .dish-check{
+            width: 50px;
+            height: 100%;
+            background-color: Purple;
           }
         }
       }
