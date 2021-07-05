@@ -102,13 +102,12 @@ h5 {
       }
     }
   }
-  .loader{
-    background-color: rgba(255,255,255,.95);
+  .loader {
+    background-color: rgba(255, 255, 255, 0.95);
     display: flex;
     height: 100px;
-    width: 100%;  
+    width: 100%;
     z-index: 100;
-
   }
   .spinners {
     border: 16px solid #f3f3f3;
@@ -123,8 +122,6 @@ h5 {
     animation: spin 3s ease-in-out 0.1s forwards;
     z-index: 100;
     position: absolute;
-
-
   }
 
   @keyframes spin {
@@ -139,33 +136,29 @@ h5 {
     }
   }
   #content {
-    
-    
-    .slide-in-top {
-        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-      }
-      .slide-in-top2 {
-        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 100ms both;
-      }
-      .slide-in-top3 {
-        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 200ms both;
-      }
-      .slide-in-top4 {
-        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
-      }
+    .slide-in-bottom {
+      animation: slide-in-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    .slide-in-bottom2 {
+      animation: slide-in-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 100ms both;
+    }
+    .slide-in-bottom3 {
+      animation: slide-in-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms both;
+    }
+    .slide-in-bottom4 {
+      animation: slide-in-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms both;
+    }
 
-       @keyframes slide-in-top {
-       0% {
-         transform: translateY(-1000px);
-         opacity: 0;
-          }
-       100% {
-         transform: translateY(0);
-         opacity: 1;
-            }
+    @keyframes slide-in-bottom {
+      0% {
+        transform: translateY(1000px);
+        opacity: 0;
       }
-
-
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
 
     #menu {
       background-color: white;
@@ -184,8 +177,11 @@ h5 {
         justify-content: space-between;
         flex-direction: row;
         font-family: "Shrikhand", cursive;
+
         .fa-heart {
           font-weight: normal;
+          &:hover {
+          }
         }
       }
       .menu-item {
@@ -230,7 +226,7 @@ h5 {
           .dish-price {
             font-weight: bold;
           }
-          .dish-check{
+          .dish-check {
             width: 50px;
             height: 100%;
             background-color: Purple;
@@ -238,21 +234,19 @@ h5 {
             align-items: center;
             justify-content: center;
             .fa-check-circle {
-              animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate both;
+              animation: rotate-in-center 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) alternate both;
             }
 
             @keyframes rotate-in-center {
-            0% {
-            transform: rotate(-360deg);
-            opacity: 0;
+              0% {
+                transform: rotate(-360deg);
+                opacity: 0;
+              }
+              100% {
+                transform: rotate(0);
+                opacity: 1;
+              }
             }
-            100% {
-            transform: rotate(0);
-            opacity: 1;
-            }
-            }
-
-
           }
         }
       }
@@ -325,56 +319,63 @@ h5 {
         margin-bottom: 15px;
         font-weight: bolder;
       }
-      .restaurant-block {
-        border-radius: 20px;
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-        position: relative;
-        img {
-          border-radius: 15px 15px 0 0;
-          object-fit: cover;
-          width: 100%;
-          height: 150px;
-        }
-        .new {
-          background-color: #99e2d0;
-          color: #008766;
-          border-radius: 2px;
-          padding: 5px;
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          font-size: 0.8rem;
-          font-weight: bold;
-          width: 60px;
-          text-align: center;
-        }
-        .image-description {
-          padding-left: 15px;
-          color: black;
-          display: flex;
-          background-color: white;
-          align-items: center;
-          justify-content: space-between;
-          border-radius: 0 0 15px 15px;
-          i {
-            margin-right: 10px;
-            &:hover {
-              filter: hue-rotate(-30deg);
-            }
-          }
-          span {
-            margin: 15px 15px 15px 0px;
+    }
+  }
+}
+.restaurant-block {
+  border-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  position: relative;
+  .fa-heartnohover {
+    position: absolute;
+  }
+  .fa-hearthover {
+    position: relative;
+    opacity: 1;
+  }
+  img {
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+  }
+  .new {
+    background-color: #99e2d0;
+    color: #008766;
+    border-radius: 2px;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 60px;
+    text-align: center;
+  }
+  .image-description {
+    padding-left: 15px;
+    color: black;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 15px 15px;
+    i {
+      margin-right: 10px;
+      &:hover {
+        filter: hue-rotate(-30deg);
+      }
+    }
+    span {
+      margin: 15px 15px 15px 0px;
 
-            font-size: 1.2rem;
-            text-decoration: none;
-            .location {
-              font-weight: normal;
-            }
-          }
-        }
+      font-size: 1.2rem;
+      text-decoration: none;
+      .location {
+        font-weight: normal;
       }
     }
   }
