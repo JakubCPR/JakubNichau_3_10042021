@@ -37,6 +37,7 @@ h5 {
         width: 70%;
       }
     }
+    
     #logo_wrapper {
       background-color: white;
       display: flex;
@@ -329,13 +330,7 @@ h5 {
   flex-direction: column;
   margin-bottom: 20px;
   position: relative;
-  .fa-heartnohover {
-    position: absolute;
-  }
-  .fa-hearthover {
-    position: relative;
-    opacity: 1;
-  }
+ 
   img {
     border-radius: 15px 15px 0 0;
     object-fit: cover;
@@ -363,17 +358,26 @@ h5 {
     align-items: center;
     justify-content: space-between;
     border-radius: 0 0 15px 15px;
+  
     i {
+      .fa-heartnohover {
+        position: relative;
+      }
+      .fa-hearthover {
+        position: absolute;
+        opacity: 1;
+      }
       margin-right: 10px;
       &:hover {
         filter: hue-rotate(-30deg);
-      }
+       }
     }
     span {
       margin: 15px 15px 15px 0px;
 
       font-size: 1.2rem;
       text-decoration: none;
+    
       .location {
         font-weight: normal;
       }
