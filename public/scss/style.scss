@@ -402,28 +402,44 @@ h5 {
     justify-content: space-between;
     border-radius: 0 0 15px 15px;
     .favorite-wrapper{
-      position: relative;
-      margin-right: 10px;
-      height: 19.2px;
-      width: 19.2px;
-      i {
-        .fa-heartnohover {
-          position: absolute;
-          left: 0;
-          top: 0;
-          z-index: 100;
-        }
-        .fa-hearthover {
-          position: absolute;
-          left: 0;
-          top: 0;
-          z-index: 150;
-        }
-        &:hover {
-          filter: hue-rotate(-30deg);
-        }
-      }
+      //position: relative;
+      //margin-right: 10px;
+      //height: 19.2px;
+      //width: 19.2px;
     }
+      .heart{
+        position: relative;
+        margin-right: 30px;
+        margin-bottom: 15px;
+      }
+    
+        .fa-heart {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transition: 2S;
+        }
+      
+        .fas.fa-heart {
+          left: 0;
+          top: 0;
+          opacity: 0;
+          transition: 2s;
+          color: red;
+        }
+      
+        .heart:hover .fas.fa-heart {
+          opacity: 1;
+        }
+        .heart:hover .far.fa-heart{
+          opacity: 0;
+        }
+      
+      
+      
+      
+
+      
     span {
       margin: 15px 15px 15px 0px;
 
