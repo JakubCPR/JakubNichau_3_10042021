@@ -206,11 +206,34 @@ h5 {
         flex-direction: row;
         font-family: "Shrikhand", cursive;
 
-        .fa-heart {
-          font-weight: normal;
-          &:hover {
-          }
+        .heart{
+          position: relative;
+          margin-right: 30px;
+          margin-bottom: 15px;
         }
+      
+          .fa-heart {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: 2S;
+          }
+        
+          .fas.fa-heart {
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: 2s;
+            color: red;
+          }
+        
+          .heart:hover .fas.fa-heart {
+            opacity: 1;
+          }
+          .heart:hover .far.fa-heart{
+            opacity: 0;
+          }
+        
       }
       .menu-item {
         margin-left: 38px;
