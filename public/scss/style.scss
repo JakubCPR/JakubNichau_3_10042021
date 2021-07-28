@@ -223,7 +223,7 @@ h5 {
             left: 0;
             top: 0;
             opacity: 0;
-            transition: 2s;
+            transition: 1s;
             color: red;
           }
         
@@ -247,19 +247,15 @@ h5 {
         margin-top: 5px;
       }
       .dish-element {
+        width: calc(100% - 90px);
         margin: 0 30px 10px 30px;
         -webkit-box-shadow: 0px 5px 15px -5px #000000;
         box-shadow: 0px 5px 15px -5px #000000;
         border-radius: 20px;
         position: relative;
-        width: calc(100% - 60px);
         z-index: 10;
         overflow: hidden;
         background-color: rgb(247, 247, 247);
-        &:hover .dish-wrapper{
-          cursor: pointer;
-          width: calc(100% - 110px);
-        }
         &:hover .fa-check-circle{
           transform: rotate(360deg);
         }
@@ -289,15 +285,12 @@ h5 {
           position: relative;
           border-radius: 20px 0 0 20px;
           padding: 10px 15px;
-          width: calc(100% - 30px);
+          width: calc(100% - 50px);
           top: 0;
           left: 0;
           z-index: 9;
           background-color: white;
           transition-duration: .3s;
-          &:hover {
-
-          }
           .dish-name {
             font-size: 1.2rem;
             font-weight: bold;
@@ -315,6 +308,18 @@ h5 {
               font-weight: bold;
             }
           }
+          .dish-sidebar{
+            width: 0;
+            height: 100%;
+            transition: 2s;
+          }
+          .dish-wrapper:hover .dish-name{
+            width: calc(100% - 50px);
+          }
+          .dish-wrapper:hover .dish-sidebar{
+            width:60px;
+          }
+
         }
       }
       #button_wrapper {
@@ -424,12 +429,12 @@ h5 {
     align-items: center;
     justify-content: space-between;
     border-radius: 0 0 15px 15px;
-    .favorite-wrapper{
+    //.favorite-wrapper{
       //position: relative;
       //margin-right: 10px;
       //height: 19.2px;
       //width: 19.2px;
-    }
+    //}
       .heart{
         position: relative;
         margin-right: 30px;
@@ -447,7 +452,7 @@ h5 {
           left: 0;
           top: 0;
           opacity: 0;
-          transition: 2s;
+          transition: 1s;
           color: red;
         }
       
@@ -457,11 +462,6 @@ h5 {
         .heart:hover .far.fa-heart{
           opacity: 0;
         }
-      
-      
-      
-      
-
       
     span {
       margin: 15px 15px 15px 0px;
@@ -496,7 +496,7 @@ h5 {
         align-items: center;
         .fa-utensils .fa-handshake {
           color: white;
-          margin-right: 5px;
+          margin-right: 10px;
         }
       }
       img {
