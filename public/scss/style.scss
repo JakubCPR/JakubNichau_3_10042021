@@ -22,6 +22,10 @@ h5 {
   text-align: center;
   margin-top: 15px;
 }
+.purple-button:hover {
+  box-shadow: .25rem .25rem 10px rgba(0,0,0,.5);
+  opacity: 0.8;
+}
 #container {
   max-width: 700px;
   margin: auto;
@@ -269,48 +273,43 @@ h5 {
         height: 70px;
         border-radius: 15px;
         background-color: white;
-      }
       
+      }
+      .check-wrapper {
+        background-color: #99e2d0;
+margin: -1rem -5rem -1rem 1rem;
+width: 4rem;
+display: flex;
+align-items: center;
+justify-content: center;
+transition-duration: .5s;
+
+      }
+
+      .check {
+        height: 5rem;
+width: 6rem;
+
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 100px;
+transform: rotate(-180deg);
+transition-duration: .5s;;
+      }
+      .dish-element:hover .check-wrapper {
+        margin-right: 0rem;
+               
+      }
       .dish-element:hover .check {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-animation: slide-left 0.5s ease;
-                animation: slide-left 0.5s ease;
-        -webkit-transform-origin: right;
-                transform-origin: right;
-      }
+        transform: rotate(0);
+    }
+    .fa-check-circle{
+      color: white;
+      font-size: 25px;
+    }
       
-      .dish-element:hover .dish-price {
-        padding-right: 70px;
-        -webkit-transition: 0.5s ease;
-        transition: 0.5s ease;
-      }
       
-      .dish-element .check {
-        display: none;
-        position: absolute;
-        background: #99E2D0;
-        border-radius: 0 15px 15px 0;
-        right: 0px;
-        padding: 0 13px;
-        height: 100%;
-      }
-      
-      .dish-element .check i {
-        font-size: 30px;
-        color: white;
-        -webkit-transform: rotate(180deg);
-                transform: rotate(180deg);
-        -webkit-animation: rotate 0.5s both;
-                animation: rotate 0.5s both;
-      }
 
       .dish-wrapper {
         margin-left: 20px;
@@ -346,49 +345,7 @@ h5 {
                 align-items: center;
       }
       
-      @-webkit-keyframes rotate {
-        0% {
-          -webkit-transform: rotate(0);
-                  transform: rotate(0);
-        }
-        100% {
-          -webkit-transform: rotate(360deg);
-                  transform: rotate(360deg);
-        }
-      }
-      
-      @keyframes rotate {
-        0% {
-          -webkit-transform: rotate(0);
-                  transform: rotate(0);
-        }
-        100% {
-          -webkit-transform: rotate(360deg);
-                  transform: rotate(360deg);
-        }
-      }
-      
-      @-webkit-keyframes slide-left {
-        0% {
-          -webkit-transform: scaleX(0);
-                  transform: scaleX(0);
-        }
-        100% {
-          -webkit-transform: scaleX(-50px);
-                  transform: scaleX(-50px);
-        }
-      }
-      
-      @keyframes slide-left {
-        0% {
-          -webkit-transform: scaleX(0);
-                  transform: scaleX(0);
-        }
-        100% {
-          -webkit-transform: scaleX(-50px);
-                  transform: scaleX(-50px);
-        }
-      }
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
