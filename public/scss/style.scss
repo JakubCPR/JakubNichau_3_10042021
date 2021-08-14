@@ -508,10 +508,11 @@ footer {
     margin-bottom: 7px;
     cursor: pointer;
     a {
+      &:hover{
+        text-decoration: underline;
+      }
       text-decoration: none;
       color: white;
-    }
-    &:hover {
     }
     &:first-of-type {
       margin-bottom: 25px;
