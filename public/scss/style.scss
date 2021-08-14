@@ -23,7 +23,7 @@ h5 {
   margin-top: 15px;
 }
 .purple-button:hover {
-  box-shadow: .25rem .25rem 10px rgba(0,0,0,.5);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
   opacity: 0.8;
 }
 #container {
@@ -252,8 +252,7 @@ h5 {
         margin-top: 5px;
       }
 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
       .dish-element {
         position: relative;
@@ -263,71 +262,65 @@ h5 {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         margin: 0 30px 10px 30px;
         -webkit-box-shadow: 0px 5px 15px -5px #000000;
         box-shadow: 0px 5px 15px -5px #000000;
         height: 70px;
         border-radius: 15px;
         background-color: white;
-      
       }
       .check-wrapper {
         background-color: #99e2d0;
-margin: -1rem -5rem -1rem 1rem;
-width: 4rem;
-display: flex;
-align-items: center;
-justify-content: center;
-transition-duration: .5s;
-
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 0.5s;
       }
 
       .check {
         height: 5rem;
-width: 6rem;
-
-display: flex;
-align-items: center;
-justify-content: center;
-border-radius: 100px;
-transform: rotate(-180deg);
-transition-duration: .5s;;
+        width: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate(-180deg);
+        transition-duration: 0.5s;
       }
       .dish-element:hover .check-wrapper {
         margin-right: 0rem;
-               
       }
       .dish-element:hover .check {
         transform: rotate(0);
-    }
-    .fa-check-circle{
-      color: white;
-      font-size: 25px;
-    }
-      
-      
+      }
+      .fa-check-circle {
+        color: white;
+        font-size: 25px;
+      }
 
       .dish-wrapper {
         margin-left: 20px;
         white-space: nowrap;
         overflow: hidden;
       }
-      
+
       .dish-wrapper p {
         margin: 0;
         text-overflow: ellipsis;
         overflow: hidden;
       }
-      
+
       .dish-name {
         font-weight: bold;
       }
-      
+
       .dish-price {
         padding-right: 20px;
         font-weight: bold;
@@ -339,18 +332,15 @@ transition-duration: .5s;;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
       }
-      
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-      
       #button_wrapper {
         width: 100%;
         display: flex;
@@ -483,8 +473,8 @@ transition-duration: .5s;;
       opacity: 0;
       transition: 1s;
       background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .heart:hover .fas.fa-heart {
@@ -516,6 +506,13 @@ footer {
     padding-left: 25px;
     color: white;
     margin-bottom: 7px;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    &:hover {
+    }
     &:first-of-type {
       margin-bottom: 25px;
     }
