@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
+ 
+}
+
+p
+{
+
 }
 
 h1,
@@ -10,6 +16,7 @@ h4,
 h5 {
   font-family: "Shrikhand", cursive;
 }
+
 .purple-button {
   padding: 15px 15px 15px 15px;
   border-radius: 999px;
@@ -308,19 +315,27 @@ h5 {
       .dish-wrapper {
         margin-left: 20px;
         white-space: nowrap;
-        overflow: hidden;
-      }
-
-      .dish-wrapper p {
-        margin: 0;
         text-overflow: ellipsis;
         overflow: hidden;
       }
-
-      .dish-name {
-        font-weight: bold;
-      }
-
+    
+        .dish-details {
+          padding: 0;
+          margin: 0;
+          font-family: "Roboto", sans-serif;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        
+        }
+        .dish-name {
+          font-weight: bold;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        
+        }
+       
       .dish-price {
         padding-right: 20px;
         font-weight: bold;
@@ -337,7 +352,12 @@ h5 {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
+
+     
 
       //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
